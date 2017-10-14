@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import { render } from 'react-dom';
 
 class Main extends Component {
 
 
     uploadWidget() {
+        const cloudinary = window.cloudinary;
+
         cloudinary.openUploadWidget({ cloud_name: 'mmalvar13', upload_preset: 'scrapbook_preset'},
             function(error, result) {
                 console.log(result);
@@ -25,3 +28,4 @@ class Main extends Component {
 }
 
 export default Main;
+// render(<Main />, document.getElementById('upload-container'));
