@@ -1,28 +1,150 @@
-.App {
-  text-align: center;
+/*.App {*/
+/*text-align: center;*/
+/*background-color: #FFB260;*/
+/*font-family: Oswald, sans-serif;*/
+/*color: white;*/
+/*height: 100%;*/
+/*}*/
+
+/*.App-logo {*/
+/*animation: App-logo-spin infinite 20s linear;*/
+/*height: 80px;*/
+/*}*/
+
+/*.App-header {*/
+/*height: 150px;*/
+/*padding: 20px;*/
+/*color: #0F234D;*/
+/*}*/
+
+/*.App-title {*/
+/*font-size: 3.5em;*/
+/*background-color: #FFB260;*/
+/*margin-top: 0;*/
+/*padding-top: 1rem;*/
+
+/*}*/
+
+/*.App-intro {*/
+/*font-size: large;*/
+/*}*/
+
+/*.explanation p{*/
+/*margin-top: 0;*/
+/*}*/
+
+body {
+    background-image: url('./flowerfield.png');
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.main {
+    color: white;
+    font-family: Oswald, sans-serif;
+    padding-bottom: 4rem;
 }
 
 .App-title {
-  font-size: 1.5em;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 2rem;
+    color: #FFFFFF;
+
 }
 
-.App-intro {
-  font-size: large;
+.well {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 4px 3px 3px black;
+}
+
+.explanation {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    text-shadow: 2px 2px 4px black;
+    font-size: 1.3rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.explanation .uhem {
+    font-size: 2rem;
+}
+
+
+
+.explanation h3, h4, p{
+    margin: 0;
+}
+
+.how-to{
+    background-color: white;
+    width: 70%;
+    margin: 0 auto;
+    color: #0F234D;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.upload {
+    text-align: center;
+    color: #0F234D;
+
+}
+
+
+.upload-button {
+    height: 200px;
+    width: 400px;
+    font-size: 30px;
+    background-color: #D25C63;
+    border: 3px solid white;
+    font-family: Oswald, sans-serif;
+
+}
+
+.upload-button:hover{
+    border: 3px solid #D25C63;
+    background-color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+    .upload-button{
+        height: 150px;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .how-to{
+        width: 50%;
+        float: left;
+        margin: 0 2rem 3rem 2rem;
+    }
+
+    .upload{
+        float: left;
+        width: 30%;
+    }
+
+    .upload-button{
+        width: 100%;
+    }
+
+    .how-upload{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+
+
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
